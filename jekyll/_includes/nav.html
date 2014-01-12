@@ -1,0 +1,27 @@
+<nav class="top-bar" data-topbar>
+    <ul class="title-area">
+      <!-- Title Area -->
+      <li class="name">
+          <a href="/">
+            <img src="http://placehold.it/140x45&text={{site.title}}-Logo" />
+          </a>
+      </li>
+      <li class="toggle-topbar menu-icon"><a href="#"><span>menu</span></a></li>
+    </ul>
+ 
+    <section class="top-bar-section">
+      <!-- Right Nav Section -->
+      <ul class="left">
+        {% for link in site.navigation %}
+          {% assign current = nil %}
+          {% if page.url == link.url or page.layout == link.layout %}
+          {% assign current = 'active' %}
+          {% endif %}
+
+          <li class="{% if forloop.first %}first{% endif %} {{ current }} {% if forloop.last %}last{% endif %}">
+            <a class="{{ current }}" href="{{ link.url }}">{{ link.text }}</a>
+          </li>
+      {% endfor %}
+      </ul>
+    </section>
+  </nav>

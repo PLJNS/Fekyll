@@ -1,0 +1,34 @@
+# Dependencies
+markdown:         redcarpet
+pygments:         true
+
+# Permalinks
+permalink:        pretty
+
+# Setup
+title:            Fekyll
+tagline:          'Foundation 5 for Jekyll'
+description:      'Base theme for Jekyll themes by @mdo.'
+url:              http://getpoole.com
+
+author:
+  name:           'Paul Jones'
+  url:            http://PLJNS.com
+
+paginate:         5
+
+# Custom vars
+version:          1.0.0
+
+github:
+  repo:           https://github.com/poole/poole
+
+# Navigation
+
+navigation:
+- text: About
+  url: /about/
+- text: Contact
+  url: /contact/
+- text: Blog
+  url: /blog/
