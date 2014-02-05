@@ -5,62 +5,82 @@
 				<h3>{{ site.title }}</h3>
 				<p>{{ site.description }}</p>
 			</div>
-			
 		</div>
 	</div>
 
 	<div class="row">
 		<p></p>
-		<div class="large-6 columns">
+		<div class="large-4 medium-4 small-6 columns">
 			<p>© {{ site.time | date: '%Y' }} {{ site.author.name }}</p>
 		</div>
-		<div class="large-6 small-12 columns">
+		<div class="large-8 medium-8 small-6 columns">
 				<ul class="button-group" id="socialButtonGroup">
-					{% if site.facebook %}
+					{% if site.social.facebook %}
 						<li>
-							<a class="tiny button facebook" target="_blank" title="Facebook" href="http://www.facebook.com/{{ site.facebook }}">
+							<a class="tiny button facebook" target="_blank" title="Facebook" href="http://www.facebook.com/{{ site.social.facebook }}">
 								<i class="fa fa-facebook fa-lg"></i>
 							</a>
 						</li>
 					{% endif %}
-					{% if site.twitter %}
+					{% if site.social.twitter %}
 						<li>
-							<a class="tiny button twitter" target="_blank" title="Twitter" href="http://www.twitter.com/{{ site.twitter }}">
+							<a class="tiny button twitter" target="_blank" title="Twitter" href="http://www.twitter.com/{{ site.social.twitter }}">
 								<i class="fa fa-twitter fa-lg"></i>
 							</a>
 						</li>
 					{% endif %}
-					{% if site.google-plus %}
+					{% if site.social.google-plus %}
 						<li>
-							<a class="tiny button google-plus" target="_blank" title="google-plus" href="http://www.plus.google.com/+{{ site.google-plus }}">
+							<a class="tiny button google-plus" target="_blank" title="google-plus" href="http://www.plus.google.com/+{{ site.social.google-plus }}">
 								<i class="fa fa-google-plus fa-lg"></i>
 							</a>
 						</li>
 					{% endif %}
-					{% if site.soundcloud %}
+					{% if site.social.soundcloud %}
 						<li>
-							<a class="tiny button soundcloud" target="_blank" title="soundcloud" href="http://www.soundcloud.com/{{ site.soundcloud }}">
+							<a class="tiny button soundcloud" target="_blank" title="soundcloud" href="http://www.soundcloud.com/{{ site.social.soundcloud }}">
 								<i class="fa fa-cloud fa-lg"></i>
 							</a>
 						</li>
 					{% endif %}
-					{% if site.youtube %}
+					{% if site.social.youtube %}
 						<li>
-							<a class="tiny button youtube" target="_blank" title="youtube" href="http://www.youtube.com/{{ site.youtube }}">
+							<a class="tiny button youtube" target="_blank" title="youtube" href="http://www.youtube.com/{{ site.social.youtube }}">
 								<i class="fa fa-youtube fa-lg"></i>
 							</a>
 						</li>
 					{% endif %}
-					{% if site.instagram %}
+					{% if site.social.instagram %}
 						<li>
-							<a class="tiny button instagram" target="_blank" title="instagram" href="http://www.instagram.com/{{ site.instagram }}">
+							<a class="tiny button instagram" target="_blank" title="instagram" href="http://www.instagram.com/{{ site.social.instagram }}">
 								<i class="fa fa-instagram fa-lg"></i>
 							</a>
 						</li>
 					{% endif %}
-					{% if site. %}
+					{% if site.social.linkedin %}
 						<li>
-							<a class="tiny button email" target="_blank" title="email" href="mailto:{{ site.email }}">
+							<a class="tiny button linkedin" target="_blank" title="linkedin" href="http://linkedin.com/{{ site.social.linkedin }}">
+								<i class="fa fa-linkedin fa-lg"></i>
+							</a>
+						</li>
+					{% endif %}
+					{% if site.social.foursquare %}
+						<li>
+							<a class="tiny button foursquare" target="_blank" title="foursquare" href="http://foursquare.com/{{ site.social.foursquare }}">
+								<i class="fa fa-foursquare fa-lg"></i>
+							</a>
+						</li>
+					{% endif %}
+					{% if site.social.github %}
+						<li>
+							<a class="tiny button github" target="_blank" title="github" href="http://github.com/{{ site.social.github }}">
+								<i class="fa fa-github fa-lg"></i>
+							</a>
+						</li>
+					{% endif %}
+					{% if site.social.email %}
+						<li>
+							<a class="tiny button email" target="_blank" title="email" href="mailto:{{ site.social.email }}">
 								<i class="fa fa-envelope fa-lg"></i>
 							</a>
 						</li>

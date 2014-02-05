@@ -1,0 +1,11 @@
+#!/bin/sh
+
+for file in notes/{,**/}*.md; 
+
+do 
+
+fileHTML="${file%.md}.html"
+
+pandoc -o "jekyll/$fileHTML" "$file" --template=template.txt; 
+
+done;
