@@ -36,3 +36,42 @@
   "foundation/components/tooltips",
   "foundation/components/offcanvas",
   "foundation/components/visibility";
+
+@import "colors/variables";
+@import "colors/skins";
+@import "colors/social";
+
+header,
+#drain {
+  background-color:darken($primary-color, 15%);
+  color: white;
+  text-shadow: 0 1px 0 black !important;
+}
+
+#footer {
+  background-color:#333333;
+
+  p {
+    color:#666666;
+  }
+}
+
+header, #drain {
+  h1,h2,h3,h4,h5,h6 {
+    color:white;
+  }
+
+  p {
+    color:white;
+  }
+}
+
+#socialButtonGroup {
+  float:right;
+
+  li a {
+    background-color: transparent;
+    border:0;
+    color:#666666;
+  }
+}

@@ -1,10 +1,71 @@
-<footer class="row">
-    <div class="large-12 columns">
-      <hr />
-      <div class="row">
-        <div class="large-6 columns">
-          <p>© {{ site.time | date: '%Y' }} {{site.author.name}}</p>
-        </div>
-      </div>
-    </div>
+<footer id="footer">
+	<div id="drain">
+		<div class="row">
+			<div class="large-6 small-12 columns">
+				<h3>{{ site.title }}</h3>
+				<p>{{ site.description }}</p>
+			</div>
+			
+		</div>
+	</div>
+
+	<div class="row">
+		<p></p>
+		<div class="large-6 columns">
+			<p>© {{ site.time | date: '%Y' }} {{ site.author.name }}</p>
+		</div>
+		<div class="large-6 small-12 columns">
+				<ul class="button-group" id="socialButtonGroup">
+					{% if site.facebook %}
+						<li>
+							<a class="tiny button facebook" target="_blank" title="Facebook" href="http://www.facebook.com/{{ site.facebook }}">
+								<i class="fa fa-facebook fa-lg"></i>
+							</a>
+						</li>
+					{% endif %}
+					{% if site.twitter %}
+						<li>
+							<a class="tiny button twitter" target="_blank" title="Twitter" href="http://www.twitter.com/{{ site.twitter }}">
+								<i class="fa fa-twitter fa-lg"></i>
+							</a>
+						</li>
+					{% endif %}
+					{% if site.google-plus %}
+						<li>
+							<a class="tiny button google-plus" target="_blank" title="google-plus" href="http://www.plus.google.com/+{{ site.google-plus }}">
+								<i class="fa fa-google-plus fa-lg"></i>
+							</a>
+						</li>
+					{% endif %}
+					{% if site.soundcloud %}
+						<li>
+							<a class="tiny button soundcloud" target="_blank" title="soundcloud" href="http://www.soundcloud.com/{{ site.soundcloud }}">
+								<i class="fa fa-cloud fa-lg"></i>
+							</a>
+						</li>
+					{% endif %}
+					{% if site.youtube %}
+						<li>
+							<a class="tiny button youtube" target="_blank" title="youtube" href="http://www.youtube.com/{{ site.youtube }}">
+								<i class="fa fa-youtube fa-lg"></i>
+							</a>
+						</li>
+					{% endif %}
+					{% if site.instagram %}
+						<li>
+							<a class="tiny button instagram" target="_blank" title="instagram" href="http://www.instagram.com/{{ site.instagram }}">
+								<i class="fa fa-instagram fa-lg"></i>
+							</a>
+						</li>
+					{% endif %}
+					{% if site. %}
+						<li>
+							<a class="tiny button email" target="_blank" title="email" href="mailto:{{ site.email }}">
+								<i class="fa fa-envelope fa-lg"></i>
+							</a>
+						</li>
+					{% endif %}
+				</ul>
+			</div>
+	</div>
 </footer>

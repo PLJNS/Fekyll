@@ -5,11 +5,23 @@ pygments:         true
 # Permalinks
 permalink:        pretty
 
+# Social
+
+facebook:          paulmmj
+twitter:           PLJNS
+google-plus:       PaulJones9
+soundcloud:        PLJNS
+youtube:           paulmmj
+instagram:         PLJNS
+email:             paulmmj@gmail.com
+
 # Setup
 title:            Fekyll
 tagline:          'Foundation 5 for Jekyll'
 description:      'Base theme for Jekyll themes by @mdo.'
 url:              http://getpoole.com
+
+simple-form: 90
 
 author:
   name:           'Paul Jones'
@@ -26,9 +38,11 @@ github:
 # Navigation
 
 navigation:
+- text: Blog
+  url: /blog/
+- text: Projects
+  url: /projects/
 - text: About
   url: /about/
 - text: Contact
   url: /contact/
-- text: Blog
-  url: /blog/

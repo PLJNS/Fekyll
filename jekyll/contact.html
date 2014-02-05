@@ -1,0 +1,40 @@
+---
+layout: page
+title: Contact
+---
+
+<div class="row">
+	<div class="large-12 columns">
+		<p></p>
+		<form action="http://getsimpleform.com/messages?form_api_token={{ site.simple-fore }}" method="post" id="contactForm" data-abide>
+			<div class="row">
+				<div class="large-4 medium-6 small-12 columns namefield">
+					<label>Your name <small>Required</small></label>
+					<input type="text" name="name" placeholder="Will Smith" required pattern="[a-zA-Z]+" />
+					<small class="error">Who are you?</small>
+				</div>
+				<div class="large-4 medium-6 small-12 columns">
+					<label>Your Email <small>Required</small></label>
+					<input type="email" name="email" placeholder="wsmith@gmail.com" required />
+					<small class="error">How can we get back to you?</small>
+				</div>
+				<div class="large-4 medium-6 small-12 columns">
+					<label>Subject <small>Required</small></label>
+					<input type="text" name="subject" placeholder="Inquiry" required/>
+					<small class="error">What do you want to contact us about?</small>
+				</div>
+			</div>
+			<div class="row">
+				<div class="large-10 columns">
+					<label>Message <small>Required</small></label>
+					<textarea name="message" placeholder="Dear {{ site.author.name }}," style="height:54px;" required ></textarea>
+					<small class="error">You need to enter a message!</small>
+				</div>
+					<div class="large-2 columns">
+					<label class="hide-for-small">Submit</label>
+					<input type='submit' value='Send' class="button radius" style="width:100%; height:100%;"/>
+				</div>
+			</div>
+		</form>
+	</div>
+</div>
