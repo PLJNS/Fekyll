@@ -2,6 +2,14 @@
 layout: default
 ---
 
+<header>
+  <div class="row">
+    <div class="large-12 columns">
+      <h1>Blog</h1>
+    </div>
+  </div>
+</header>
+
 <div class="row">
     <div class="large-12 columns" role="content">
       <article>
@@ -27,5 +35,12 @@ layout: default
         </li>
       {% endfor %}
     </ul>
+  </div>
+</div>
+
+<div class="row" style="padding-left: 15px; padding-right: 15px; padding-top:25px;">
+  <div class="large-12">
+    <h2>Comments</h2>
+    {% include disqus.html %}
   </div>
 </div>

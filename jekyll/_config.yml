@@ -7,18 +7,22 @@ permalink:        pretty
 
 # Social
 
-facebook:          paulmmj
-twitter:           PLJNS
-google-plus:       PaulJones9
-soundcloud:        PLJNS
-youtube:           paulmmj
-instagram:         PLJNS
-email:             paulmmj@gmail.com
+social: 
+  facebook:          paulmmj
+  twitter:           PLJNS
+  google-plus:       PaulJones93
+  foursquare:        PLJNS
+  github:            PLJNS
+  soundcloud:        PLJNS
+  youtube:           paulmmj
+  instagram:         PLJNS
+  linkedin:          paulmmj
+  email:             paulmmj@gmail.com
 
 # Setup
 title:            Fekyll
-tagline:          'Foundation 5 for Jekyll'
-description:      'Base theme for Jekyll themes by @mdo.'
+tagline:          'The easiest front-end tool for developing responsive, mobile-first personal sites on GitHub Pages.'
+description:      "Fekyll combines the simple, static, and blog-aware power of Jekyll with the most advanced responsive front-end framework in the world, Foundation. Packaged with elegant layouts right of the box, Fekyll is perfect for quickly making your GitHub project or personal page."
 url:              http://getpoole.com
 
 simple-form: 90
@@ -32,14 +36,13 @@ paginate:         5
 # Custom vars
 version:          1.0.0
 
-github:
-  repo:           https://github.com/poole/poole
-
 # Navigation
 
 navigation:
 - text: Blog
   url: /blog/
+- text: Notes
+  url: /notes/
 - text: Projects
   url: /projects/
 - text: About
