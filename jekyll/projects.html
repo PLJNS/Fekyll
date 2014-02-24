@@ -1,6 +1,66 @@
 ---
 layout: page
 title: Projects
+subtitle: Check out what I'm up to!
 ---
 
-<p>TODO: An elegant (to look at at and to develop) way of displaying all projects available here.</p>
+
+
+<h2>Ongoing</h2>
+
+{% for project in site.data.ongoing-projects %}
+<div class="panel project-panel">
+	<div class="row">
+		<div class="large-12 medium-12 small-12 columns">
+				<div class="row">
+					<div class="large-6 medium-6 small-6 columns">
+						<h3>{{project.name}}</h3> 
+					</div>
+
+					<div class="large-6 medium-6 small-6 columns text-right">
+						{% for tag in project.tags %}
+							<span class="label radius">{{ tag }}</span>
+						{% endfor %}
+					</div>
+
+				</div>
+			<p>{{ project.description }}</p>
+		</div>
+	</div>
+</div>
+{% endfor %}
+
+<h2>Completed</h2>
+
+{% for project in site.data.completed-projects %}
+<div class="panel project-panel">
+	<div class="row">
+		<div class="large-12 medium-12 small-12 columns">
+				<div class="row">
+					<div class="large-6 medium-6 small-6 columns">
+						<h3>
+
+						{{project.name}}
+
+						{% if project.github %}
+							<a target="_blank" title="github" href="{{coursework.github}}"><i class="fa fa-github"></i></a>
+						{% endif %}
+
+						</h3> 
+					</div>
+
+					<div class="large-6 medium-6 small-6 columns text-right">
+						{% for tag in project.tags %}
+							<span class="label radius">{{ tag }}</span>
+						{% endfor %}
+					</div>
+
+				</div>
+			<p>{{ project.description }}</p>
+		</div>
+	</div>
+</div>
+{% endfor %}
+
+
+

@@ -192,7 +192,7 @@ $include-open-sans: true !default;
 // We use these to control various global styles
 $body-bg: #fff !default;
 $body-font-color: #222 !default;
-$body-font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif !default;
+$body-font-family: "PT Serif", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif !default;
 $body-font-weight: normal !default;
 $body-font-style: normal !default;
 
@@ -279,11 +279,9 @@ $cursor-text-value: text !default;
 
 
 @include exports("global") {
-  @if $include-open-sans {
-    @import url("//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,700");
-
-    @import url("//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css");
-  }
+  @import url("//fonts.googleapis.com/css?family=PT+Serif:400,400italic,700|PT+Sans:400");
+  @import url("//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css");
+  
   // Used to provide media query values for javascript components.
   // Forward slash placed around everything to convince PhantomJS to read the value.
   meta.foundation-mq-small {

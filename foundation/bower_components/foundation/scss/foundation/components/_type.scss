@@ -3,7 +3,7 @@
 $include-html-type-classes: $include-html-classes !default;
 
 // We use these to control header font styles
-$header-font-family: join("Open Sans", $body-font-family) !default;
+$header-font-family: "PT Sans", join("Open Sans", $body-font-family) !default;
 $header-font-weight: 300 !default;
 $header-font-style: normal !default;
 $header-font-color: #222 !default;
@@ -13,12 +13,12 @@ $header-bottom-margin: .5rem !default;
 $header-text-rendering: optimizeLegibility !default;
 
 // We use these to control header font sizes
-$h1-font-size: rem-calc(44) !default;
-$h2-font-size: rem-calc(37) !default;
-$h3-font-size: rem-calc(27) !default;
-$h4-font-size: rem-calc(23) !default;
-$h5-font-size: rem-calc(18) !default;
-$h6-font-size: 1rem !default;
+$h1-font-size: rem-calc(44 + 2.5) !default;
+$h2-font-size: rem-calc(37 + 2.5) !default;
+$h3-font-size: rem-calc(27 + 2.5) !default;
+$h4-font-size: rem-calc(23 + 2.5) !default;
+$h5-font-size: rem-calc(18 + 2.5) !default;
+$h6-font-size: 1.5rem !default;
 
 // These control how subheaders are styled.
 $subheader-line-height: 1.4 !default;
@@ -28,13 +28,13 @@ $subheader-top-margin: .2rem !default;
 $subheader-bottom-margin: .5rem !default;
 
 // A general <small> styling
-$small-font-size: 60% !default;
+$small-font-size: 75% !default;
 $small-font-color: lighten($header-font-color, 30%) !default;
 
 // We use these to style paragraphs
 $paragraph-font-family: inherit !default;
 $paragraph-font-weight: normal !default;
-$paragraph-font-size: 1rem !default;
+$paragraph-font-size: 1.2rem !default;
 $paragraph-line-height: 1.6 !default;
 $paragraph-margin-bottom: rem-calc(20) !default;
 $paragraph-aside-font-size: rem-calc(14) !default;
@@ -270,7 +270,7 @@ $microformat-abbr-font-decoration: none !default;
         ol {
           margin-#{$default-float}: $list-nested-margin;
           margin-bottom: 0;
-          font-size: 1rem; /* Override nested font-size change */
+          font-size: $paragraph-font-size; /* Override nested font-size change */
         }
       }
       &.square,

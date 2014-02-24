@@ -1,0 +1,8 @@
+- name: Fekyll
+  github: https://github.com/WildJokers/Fekyll
+  description: "Managing content with Jekyll is powerful and easy. Manipulating style with Foundation 5 allows for massive change quickly. Fekyll allows you to run <code>compass watch</code> on the <code>foundation</code> directory while running <code>jekyll serve -w</code> on the <code>jekyll</code> directory in order to rapidly prototype content and style."
+  tags: [CSS, JavaScription, Foundation, Jekyll]
+- name: Marksite
+  github: https://github.com/PLJNS/Marksite
+  description: "Marksite is a dynamic website generator where every Markdown file is a page, and every directory is both a page and a navigation drop down. This allows you to create content independent of web development, organizing it however you find logical. Then, Marksite creates an interface with the same structure you designed!"
+  tags: [PHP, CSS, Web]

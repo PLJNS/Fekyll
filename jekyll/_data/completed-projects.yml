@@ -1,0 +1,12 @@
+- name: Markablog
+  github: https://github.com/PLJNS/Markablog
+  description: "This script accepts Markdown as input and builds a blog style website. Everything is an asset, the effort for every task is distilled. It's unique in that it allows you to not do very much to dramatically change the site."
+  tags: [Perl, CSS, JavaScript]
+- name: AwesomeApps
+  github: https://github.com/PLJNS/AwesomeApps
+  description: "I always had this little craving to mock-up an app spring board with some standard apps, just for some fun. I used Bootstrap and Font Awesome to make the actual icons, and BrandColors for the, well, brand colors. Big thank you to MaxCDN and their Bootstrap CDN, also the mysterious iOS 7 Colors for help with gradients."
+  tags: [CSS]
+- name: Rutstrap
+  github:  https://github.com/PLJNS/Rutstrap
+  description: "I added more red to Twitter Bootstrap. In the process, I learned how to use the LESS CSS preprocessor, how to compile using Node.js, and how to template with mustache."
+  tags: [LESS, CSS, Node.js, JavaScript, Bootstrap]

@@ -1,0 +1,27 @@
+<script>
+	var pathArray = '{{ page.url }}'.split('/');
+
+	if (pathArray.length > 2) {
+			document.write('<ul class="breadcrumbs" style="margin-top:20px;">');
+
+			var url = "";
+
+			document.write('<li><a href="/">Home</a></li>');
+
+			for (var i = 1; i < pathArray.length - 1; i++) {
+					var currentClass = "none";
+
+					if (i == pathArray.length - 2) {
+						currentClass = "current";
+					}
+
+					url += "/" + pathArray[i];
+
+					document.write(['<li class="', currentClass, '"><a href="', url,'">'].join(""));
+					document.write(pathArray[i]);
+					document.write('</a></li>');
+			}
+
+			document.write('</ul>');
+		}
+</script>

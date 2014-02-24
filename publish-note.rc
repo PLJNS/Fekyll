@@ -1,0 +1,10 @@
+n notes/{,**/}*.md;
+
+do
+
+fileHTML="${file%.md}.html"
+
+./converter.php "./$file" | pandoc -o "jekyll/$fileHTML" --template=template.txt --mathjax;
+
+
+done;

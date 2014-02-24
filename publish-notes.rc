@@ -6,6 +6,7 @@ do
 
 fileHTML="${file%.md}.html"
 
-pandoc -o "jekyll/$fileHTML" "$file" --template=template.txt; 
+./converter.php "./$file" | pandoc -o "jekyll/$fileHTML" --template=template.txt --mathjax; 
+
 
 done;

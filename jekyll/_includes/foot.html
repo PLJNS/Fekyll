@@ -1,19 +1,10 @@
 <footer id="footer">
-	<div id="drain">
-		<div class="row">
-			<div class="large-6 small-12 columns">
-				<h3>{{ site.title }}</h3>
-				<p>{{ site.description }}</p>
-			</div>
-		</div>
-	</div>
-
 	<div class="row">
 		<p></p>
-		<div class="large-4 medium-4 small-6 columns">
+		<div class="large-3 large-offset-1 columns">
 			<p>© {{ site.time | date: '%Y' }} {{ site.author.name }}</p>
 		</div>
-		<div class="large-8 medium-8 small-6 columns">
+		<div class="large-6 columns">
 				<ul class="button-group" id="socialButtonGroup">
 					{% if site.social.facebook %}
 						<li>
@@ -59,7 +50,7 @@
 					{% endif %}
 					{% if site.social.linkedin %}
 						<li>
-							<a class="tiny button linkedin" target="_blank" title="linkedin" href="http://linkedin.com/{{ site.social.linkedin }}">
+							<a class="tiny button linkedin" target="_blank" title="linkedin" href="http://linkedin.com/in/{{ site.social.linkedin }}">
 								<i class="fa fa-linkedin fa-lg"></i>
 							</a>
 						</li>

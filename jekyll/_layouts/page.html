@@ -2,17 +2,22 @@
 layout: default
 ---
 
-<header>
-  <div class="row">
-    <div class="large-12 columns">
-      <h1>{{ page.title }}</h1>
-      <h4>{{ page.subtitle }}</h4>
-    </div>
-  </div>
+<header style="background-image:url({{site.images-dir}}/background.jpg); background-size:cover;">
+	<div class="row">
+		<div class="large-10 large-offset-1 columns">
+			<h1>{{ page.title }}</h1>
+			<h4>{{ page.subtitle }}</h4>
+		</div>
+	</div>
 </header>
 
 <div class="row">
-	<div class="large-12 columns">
+	<div class="large-10 large-offset-1 columns">
+
+		{% include breadcrumbs.html %}
+
+		<div id="toc"></div>
+
 		<article>
 			{{ content }}
 		</article>

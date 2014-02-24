@@ -20,15 +20,20 @@ social:
   email:             paulmmj@gmail.com
 
 # Setup
-title:            Fekyll
-tagline:          'The easiest front-end tool for developing responsive, mobile-first personal sites on GitHub Pages.'
+title:            Fekyll Noted
+tagline:          'Fekyll with note publishing built-in'
 description:      "Fekyll combines the simple, static, and blog-aware power of Jekyll with the most advanced responsive front-end framework in the world, Foundation. Packaged with elegant layouts right of the box, Fekyll is perfect for quickly making your GitHub project or personal page."
-url:              http://getpoole.com
+url:              http://PLJNS.com
 
-simple-form: 90
+javascript-dir: /public/js
+stylesheet-dir: /public/css
+images-dir:     /public/img
+
+simple-form: x
+disqus: x
 
 author:
-  name:           'Paul Jones'
+  name:           'Your Name'
   url:            http://PLJNS.com
 
 paginate:         5

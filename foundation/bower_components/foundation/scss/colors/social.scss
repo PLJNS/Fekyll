@@ -5,27 +5,47 @@ $googleplus-brand-color: #dd4b39;
 $soundcloud-brand-color: #ff7700;
 $youtube-brand-color: #c4302b;
 $instagram-brand-color: #3f729b;
+$linkedin-brand-color: #0e76a8;
+$foursquare-brand-color: #25a0ca;
+$github-brand-color: #E8EAEA;
+$email-brand-color: #59b8d8;
 
 .instagram:hover {
-  color: darken($instagram-brand-color, 10%) !important;
+  color: $instagram-brand-color !important;
 }
 
 .soundcloud:hover {
-  color: darken($soundcloud-brand-color, 10%) !important;
+  color: $soundcloud-brand-color !important;
 }
 
 .youtube:hover {
-  color: darken($youtube-brand-color, 10%) !important;
+  color: $youtube-brand-color !important;
 }
 
 .facebook:hover {
-  color: darken($facebook-brand-color, 10%) !important;
+  color: $facebook-brand-color !important;
 }
 
 .twitter:hover {
-  color: darken($twitter-brand-color, 10%) !important;
+  color: $twitter-brand-color !important;
 }
 
 .google-plus:hover {
-  color: darken($googleplus-brand-color, 10%) !important;
+  color: $googleplus-brand-color !important;
+}
+
+.linkedin:hover {
+	color: $linkedin-brand-color !important;
+}
+
+.foursquare:hover {
+	color: $foursquare-brand-color !important;
+}
+
+.github:hover {
+	color: $github-brand-color !important;
+}
+
+.email:hover {
+	color: $email-brand-color !important;
 }

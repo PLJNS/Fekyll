@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Blog
+subtitle: Your blog's subtitle.
 ---
 
 <div class="posts">
@@ -13,7 +14,7 @@ title: Blog
         </a>
       </h2>
 
-      <h6 class="post-date">{{ post.date | date_to_string }}</h6>
+      <h3><small>{{ post.date | date_to_string }}</small></h3>
 
       {{ post.content }}
     </div>
