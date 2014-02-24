@@ -20,8 +20,8 @@ social:
   email:             paulmmj@gmail.com
 
 # Setup
-title:            Fekyll Noted
-tagline:          'Fekyll with note publishing built-in'
+title:            Fekyll
+tagline:          'This is your catchy tagline'
 description:      "Fekyll combines the simple, static, and blog-aware power of Jekyll with the most advanced responsive front-end framework in the world, Foundation. Packaged with elegant layouts right of the box, Fekyll is perfect for quickly making your GitHub project or personal page."
 url:              http://PLJNS.com
 
@@ -46,8 +46,6 @@ version:          1.0.0
 navigation:
 - text: Blog
   url: /blog/
-- text: Notes
-  url: /notes/
 - text: Projects
   url: /projects/
 - text: About
