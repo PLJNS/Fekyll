@@ -1,0 +1,62 @@
+---
+layout: page
+title: Artists
+subtitle: Check out the talent we have at Wild Jokers.
+---
+
+<div class="row">
+    <div class="large-12 columns" role="content">
+      <article>
+
+{% for member in site.data.artists %}
+	<h2>{{ member.name }}</h2>
+	<p>
+	<a href="{{ member.website }}" title="{{ member.name }}">
+		<img src="/public/img/{{ member.banner-picture }}" alt="{{ member.name }}">
+	</a>
+
+	<div class="social-button-group-wrap button-group-wrap">
+		<div class="social-button-group button-group">
+			<button class="button disabled">Find {{ member.name }}</button> 
+
+			{% if member.facebook %}
+				<a class="button facebook" target="_blank" title="Facebook" href="http://www.facebook.com/{{ member.facebook }}">
+				<i class="fa fa-facebook fa-lg"></i>
+				</a>
+			{% endif %}
+
+			{% if member.twitter %}
+				<a class="button twitter" target="_blank" title="Twitter" href="http://twitter.com/{{ member.twitter }}">
+				<i class="fa fa-twitter fa-lg"></i>
+				</a>
+			{% endif %}
+
+			{% if member.soundcloud %}
+				<a class="button soundcloud" target="_blank" title="SoundCloud" href="http://soundcloud.com/{{ member.soundcloud }}">
+				<i class="fa fa-cloud fa-lg"></i>
+				</a>
+			{% endif %}
+
+			{% if member.youtube %}
+				<a class="button youtube" target="_blank" title="YouTube" href="http://youtube.com/{{ member.youtube }}">
+				<i class="fa fa-youtube fa-lg"></i>
+				</a>
+			{% endif %}
+
+			{% if member.instagram %}
+				<a class="button instagram" target="_blank" title="YouTube" href="http://instagram.com/{{ member.instagram }}">
+				<i class="fa fa-instagram fa-lg"></i>
+				</a>
+			{% endif %}
+		</div>
+	</div>
+	</p>
+
+{% endfor %}
+
+
+</article>
+
+</div>
+
+</div>

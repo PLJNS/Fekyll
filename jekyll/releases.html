@@ -1,0 +1,25 @@
+---
+layout: page-min
+title: Releases
+subtitle: Listen to the latest sounds from Wild Jokers.
+---
+
+
+<div class="row">
+	<div class="large-12 columns">
+		<p>
+			<ul class="inline-list">
+				{% for post in site.categories.release %} 
+				<li>
+					<a href="{{ post.url }}"><img src="/public/img/{{ post.album-cover }}" height="220" width="220"></a>
+					<div class="panel" style="width:220px; height:90px">
+						<p>{{ post.title }}</p>
+					</div>
+				</li>
+				{% endfor %}
+			</ul>
+		</p>
+	</div>
+</div>
+
+<!-- TODO: Pagination here -->

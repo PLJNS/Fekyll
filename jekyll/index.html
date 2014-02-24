@@ -3,121 +3,95 @@ layout: default
 title: Home
 ---
 
+<section id="homepage-hero">
+
+  <div class="row">
+    <div class="large-6 columns">
+      <h1 class="text-right">Wild<br>Jokers</h1>
+    </div>
+    <div class="large-6 columns centered floatingyeti">
+      <img src="{{ site.images-dir }}/wildjokerhead.png" class="hide-for-small hide-for-medium centered">
+    </div>
+  </div>
+</section>
+
 <div class="row">
     <div class="large-12 columns">
  
     <!-- Content Slider -->
  
       <div class="row">
-        <div class="large-12 hide-for-small">
- 
-          <div id="featured" data-orbit>
-              <img src="http://placehold.it/1200x500&text=Slide Image 1" alt="slide image">
-              <img src="http://placehold.it/1200x500&text=Slide Image 2" alt="slide image">
-              <img src="http://placehold.it/1200x500&text=Slide Image 3" alt="slide image">
-            </div>
- 
-      </div>
-    </div>
- 
-    <!-- End Content Slider -->
- 
-    <!-- Mobile Header -->
- 
-      <div class="row">
-        <div class="large-12 columns show-for-small">
- 
-          <img src="http://placehold.it/1200x700&text=Mobile Header">
- 
-        </div>
-      </div><br>
- 
-    <!-- End Mobile Header -->
- 
- 
-      <div class="row">
         <div class="large-12 columns">
           <div class="row">
-            <!-- Shows -->
-            <div class="large-4 small-6 columns">
- 
-              <h4>Upcoming Shows</h4><hr>
- 
+
+            <div class="large-4 medium-6 small-12 columns">
+              <h3>Recent Releases</h3><hr>
+              {% for post in site.categories.release limit:3 %} 
+
               <div class="row">
-                <div class="large-1 column">
-                  <img src="http://placehold.it/50x50&text=[img]">
+
+                <div class="large-3 medium-3 small-3 columns">
+                  <img src="/public/img/{{ post.album-cover }}" height="50" width="50">
                 </div>
- 
-                <div class="large-9 columns">
-                  <h5><a href="#">Venue Name</a></h5>
-                  <h6 class="subheader show-for-small">Doors at 00:00pm</h6>
-                </div>
-              </div><hr>
- 
-              <div class="hide-for-small">
-                <div class="row">
-                  <div class="large-1 column">
-                    <img src="http://placehold.it/50x50&text=[img]">
-                  </div>
- 
-                  <div class="large-9 columns">
-                    <h5 class="subheader"><a href="#">Venue Name</a></h5>
-                  </div>
-                </div><hr>
- 
-                <div class="row">
-                  <div class="large-1 column">
-                    <img src="http://placehold.it/50x50&text=[img]">
-                  </div>
- 
-                  <div class="large-9 columns">
-                    <h5 class="subheader"><a href="#">Venue Name</a></h5>
-                  </div>
-                </div><hr>
- 
-                <div class="row">
-                  <div class="large-1 column">
-                    <img src="http://placehold.it/50x50&text=[img]">
-                  </div>
- 
-                  <div class="large-9 columns">
-                    <h5 class="subheader"><a href="#">Venue Name</a></h5>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- End Shows -->
- 
- 
-            <!-- Image -->
- 
-            <div class="large-4 small-6 columns">
-              <img src="http://placehold.it/300x465&text=Image">
-            </div>
- 
-            <!-- End Image -->
- 
- 
-            <!-- Feed -->
- 
-            <div class="large-4 small-12 columns">
- 
-              <h4>Blog</h4><hr>
               
-		          {% for post in site.posts limit:3 %}
-		          <div class="panel">
-              <h5><a href="{{post.url}}">{{post.title}}</a></h5>
+                <div class="large-9 medium-9 small-9 columns">
+                  <h5 class="subheader"><a href="{{ post.url }}">{{ post.title }}</a></h5>
+                  <h6 class="subheader">{{ post.date | date: "%-d %B %Y" }}</h6>
+                </div>
               </div>
-				{% endfor %}
- 
-              <a href="/blog/" class="right">Go To Blog »</a>
- 
+              <hr>
+
+              {% endfor %}
             </div>
+
+            <div class="large-4 medium-6 small-12 columns">
  
-            <!-- End Feed -->
+              <h3>Upcoming Shows</h3><hr>
+              <div class="row">
+                <div class="large-12 columns">
+                  <h5>Wild Joker Radio on <a href="http://thecore.fm">The Core FM</a></h5>
+                  <h6 class="subheader">January 19th, 2013</h6>
+                </div>
+              </div>
+              <hr>
+
+              <div class="row">
+                <div class="large-12 columns">
+                  <h5>Wild Joker Radio on <a href="http://thecore.fm">The Core FM</a></h5>
+                  <h6 class="subheader">January 26th, 2013</h6>
+                </div>
+              </div>
+              <hr>
+              
+              <div class="row">
+                <div class="large-12 columns">
+                  <h5>Wild Joker Radio on <a href="http://thecore.fm">The Core FM</a></h5>
+                  <h6 class="subheader">Feburary 1st, 2013</h6>
+                </div>
+              </div>
+              <hr>
+            </div>
+
+            <div class="large-4 medium-6 small-12 columns">
  
+              <h3>Latest Posts</h3><hr>
+              
+              {% for post in site.posts limit:3 %}
+
+              <div class="row">
+                <div class="large-12 columns">
+                  <h5><a href="{{post.url}}">{{post.title}}</a></h5>
+                  <h6 class="subheader">{{ post.date | date: "%-d %B %Y" }} by Paul Jones</h6>
+                </div>
+              </div>
+              <hr>
+
+
+              {% endfor %}
+            </div>
           </div>
         </div>
       </div>
- 
+    </div>
+  </div> 
     <!-- End Content -->

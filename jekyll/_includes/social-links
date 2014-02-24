@@ -1,0 +1,20 @@
+<ul>
+  {% if site.facebook %}
+    <li>Poke us on <a href="https://facebook.com/{{ site.facebook }}">Facebook</a></li>
+  {% endif %}
+  {% if site.twitter %}
+    <li>Tweet us at @<a href="https://twitter.com/{{ site.twitter }}">{{ site.twitter }}</a></li>
+  {% endif %}
+  {% if site.soundcloud %}
+    <li>Listen to us <a href="http://soundcloud.com/{{ site.soundcloud }}">SoundCloud</a></li>
+  {% endif %}
+  {% if site.youtube %}
+    <li>Watch us on <a href="http://youtube.com/{{ site.youtube }}">YouTube</a></li>
+  {% endif %}
+  {% if site.instagram %}
+    <li>Like our artsiness of <a href="http://instagram.com/{{ site.instagram }}">Instagram</a></li>
+  {% endif %}
+  {% if site.email %}
+    <li>Drop us a line via <a href="mailto:{{ site.email }}">email</a></li>
+  {% endif %}
+</ul>

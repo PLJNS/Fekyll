@@ -5,30 +5,44 @@ pygments:         true
 # Permalinks
 permalink:        pretty
 
+# Social
+
+facebook:          wearewildjokers
+twitter:           wearewildjokers
+soundcloud:        wearewildjokers
+youtube:           wearewildjokers
+instagram:         wearewildjokers
+email:             wearewildjokers@gmail.com
+
 # Setup
-title:            Fekyll
-tagline:          'Foundation 5 for Jekyll'
-description:      'Base theme for Jekyll themes by @mdo.'
-url:              http://getpoole.com
 
-author:
-  name:           'Paul Jones'
-  url:            http://PLJNS.com
-
+title:            Wild Jokers
+tagline:          'Entertainment and Muscianship'
+author:           Wild Jokers
+logo:             /public/img/face_concept_trans.png
+description:      "Wild Jokers is run by a few guys in and around New Brunswick, New Jersey. We're passionate about music, about making music, and especially about others enjoying the music we make."
+subtitle:         ''
+url:              http://wildjokers.github.io
+category-list:    [release]
 paginate:         5
 
-# Custom vars
-version:          1.0.0
-
-github:
-  repo:           https://github.com/poole/poole
+javascript-dir: /public/js
+stylesheet-dir: /public/css
+images-dir:     /public/img
 
 # Navigation
 
 navigation:
-- text: About
-  url: /about/
-- text: Contact
-  url: /contact/
 - text: Blog
   url: /blog/
+- text: Artists
+  url: /artists/
+- text: Releases
+  url: /releases/
+- text: Events
+  url: /events/
+- text: Store
+  url: /store/fans/
+- text: Contact
+  url: /contact/
+

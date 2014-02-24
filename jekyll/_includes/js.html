@@ -1,5 +1,18 @@
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-<script src="/public/js/foundation.min.js"></script>
+<script src="{{ site.javascript-dir }}/jquery.min.js"></script>
+<script src="{{ site.javascript-dir }}/foundation.min.js"></script>
+
 <script>
 	$(document).foundation();
+	$(window).bind("load", function () {
+    var footer = $("#footer");
+    var pos = footer.position();
+    var height = $(window).height();
+    height = height - pos.top;
+    height = height - footer.height();
+    if (height > 0) {
+        footer.css({
+            'margin-top': height + 'px'
+        });
+    }
+	});
 </script>

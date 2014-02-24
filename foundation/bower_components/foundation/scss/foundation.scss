@@ -36,3 +36,222 @@
   "foundation/components/tooltips",
   "foundation/components/offcanvas",
   "foundation/components/visibility";
+
+@import "colors/variables";
+@import "colors/skins";
+@import "colors/social";
+
+@import url("//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css");
+
+// Ewert
+
+@import url("//fonts.googleapis.com/css?family=Bevan");
+@import url("//fonts.googleapis.com/css?family=Roboto");
+
+header,
+#homepage-hero, 
+#drain {
+  background-color:darken($primary-color, 7%);
+  color: $white;
+  text-shadow: 0 1px 0 black !important;
+}
+
+#homepage-hero h1 {
+  font-size: $h1-font-size * 2.5 - rem-calc(10);
+  text-shadow: 0 3px 0 black !important;
+}
+
+#homepage-hero,
+header {
+  background: linear-gradient(45deg, darken($primary-color, 10%) 0%,$primary-color 100%);
+}
+
+.product img {
+  border-style: solid;
+border-width: 1px;
+border-color: #d9d9d9;
+border-bottom: 0;
+}
+
+#homepage-hero .floatingyeti img {
+    max-width: 65%;
+    position: absolute;
+    top: -75px;
+}
+
+@media only screen and (max-width: 40em) {
+    #homepage-hero .floatingyeti img {
+        width: 100%;
+        position: relative;
+        right: 0;
+        bottom: 0px;
+        top: 0px;
+        left: 120px;
+    }
+}
+
+@media only screen and (min-width:40.063em) and (max-width:64em) {
+    #homepage-hero .floatingyeti img {
+        width: 100%;
+        position: absolute;
+        right: 0;
+        bottom: 0px;
+    }
+}
+footer {
+  background-color:darken($primary-color, 12%);
+}
+
+footer p {
+  color: white;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+#drain {
+  padding-top:20px;
+}
+
+#drain a {
+  color: white;
+  text-decoration:underline;
+}
+
+#drain a:hover {
+  color: white;
+}
+
+.container h1,
+.container h2, 
+.container h3,
+.container h4,
+.container h5,
+.container h6 {
+  font-family:"Roboto";
+}
+
+#homepage-hero h1,
+#homepage-hero h2,
+#homepage-hero h3,
+#homepage-hero h4,
+#homepage-hero h5,
+#homepage-hero h6,
+header h1, 
+header h2, 
+header h3, 
+header h4, 
+header h5, 
+header h6
+#drain h1, 
+#drain h2, 
+#drain h3, 
+#drain h4, 
+#drain h5, 
+#drain h6 {
+  font-family:"Bevan" !important;
+  color: $white;
+  text-shadow: 0 2px 0 black;
+}
+
+
+
+#homepage-hero {
+  height: 350px;
+  text-align: left;
+  position: relative;
+  padding: 75px 20px 0 20px;
+
+}
+
+.social-button-group-wrap,
+.logo-block-grid-wrap {
+    text-align: center;
+}
+
+.social-button-group,
+.logo-block-grid {
+    margin-left: auto;
+    margin-right:auto; 
+    text-align: center;
+    display: inline-block;
+}
+
+.social-button-group a {
+  width: 100px;
+}
+
+@media screen and (max-width: 768px) {
+    #homepage-hero {
+        padding: 40px 5px 30px 5px;
+    }
+
+    .social-button-group button,
+      .social-button-group a {
+      width: 50%;
+      height: auto;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    #homepage-hero {
+        height: 350px;
+    }
+}
+
+#homepage-hero h1 {
+    color: white;
+    font-weight: 500;
+    margin-bottom: 0;
+    line-height: 100%;
+}
+
+#homepage-hero h4 {
+    font-size: 1.35em;
+    color: white;
+    font-weight: 300;
+}
+
+#homepage-hero h3 {
+    color: white;
+}
+
+@media screen and (max-width: 768px) {
+    #homepage-hero h3 {
+        font-size: 18px;
+        line-height: 28px;
+    }
+}
+
+.th.round {
+  -webkit-border-radius: 1000px;
+  border-radius: 1000px;
+}
+
+.social-links li {
+  width: 45px;
+  text-align:center;
+}
+
+.social-links li .facebook:hover {
+  background-color:$facebook-brand-color !important;
+}
+
+.social-links li .instagram:hover {
+  background-color:$instagram-brand-color !important;
+}
+
+.social-links li .twitter:hover {
+  background-color:$twitter-brand-color !important;
+}
+
+.social-links li .youtube:hover {
+  background-color:$youtube-brand-color !important;
+}
+
+.social-links li .soundcloud:hover {
+  background-color:$soundcloud-brand-color !important;
+}
+
+.tabs .vertical dd {
+  width: 100% !important;
+}
